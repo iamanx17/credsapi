@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =os.environ.get('secret_key')
+SECRET_KEY = 'django-insecure-l)4alua=h0&o)s*r2z7co3v8d!n_siaqx44xmgv8(6#a2@un%a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'core'
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -66,16 +66,16 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('database_name'),
-        'HOST':"ec2-52-22-161-59.compute-1.amazonaws.com",
-        'USER':os.environ.get('database_user'),
-        'PASSWORD': os.environ.get('database_password')
+        'NAME': 'd2vtjftoc42fpt',
+        'HOST': 'ec2-54-211-176-156.compute-1.amazonaws.com',
+        'USER': 'uestalezyolzfr',
+        'PASSWORD':'fbdca799144a4553c2dade8561c09a7322880899b162da70987353beac1991c4',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
